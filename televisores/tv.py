@@ -7,6 +7,7 @@ class TV:
         self._precio=500
         self._volumen=1
         self._control=None
+        cls._numTv+=1
 
     def getMarca(self):
         return self._marca.getNombre()
@@ -37,10 +38,12 @@ class TV:
             if(canal>=1 and canal<=120):
                 self._canal=canal
 
-    def getNumTV(self):
-        return numTV
-    def setNumTV(num):
-        numTv=num
+    @classmethod
+    def getNumTV(cls):
+        return cls.numTV
+    @classmethod
+    def setNumTV(cls,num):
+        cls._numTv=num
 
     def getEstado(self):
         return self._estado
