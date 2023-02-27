@@ -1,7 +1,7 @@
 class Control:
 
-    def __init__(self,tv):
-        self._tv=tv
+    def __init__(self):
+        self._tv=None
 
     def turnOff(self):
         self._tv.turnOff()
@@ -26,7 +26,7 @@ class Control:
 
     def enlazar(self,tv):
         self._tv=tv
-        tv.control=self
+        self._tv.setControl()
 
     def setTv(self,newTv):
         self._tv=newTv
