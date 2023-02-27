@@ -7,7 +7,6 @@ class TV:
         self._precio=500
         self._volumen=1
         self._control=None
-        cls._numTV+=1
 
     def getMarca(self):
         return self._marca()
@@ -72,4 +71,3 @@ class TV:
             if (self._volumen>0):
                 self._volumen-=1
 
-#prueba
