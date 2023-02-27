@@ -11,7 +11,7 @@ class TV:
         TV._numTV+=1
 
     def getMarca(self):
-        return self._marca()
+        return self._marca
     def setMarca(self,marca):
         self._marca=marca
 
